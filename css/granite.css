@@ -671,3 +671,11 @@ a:focus {
     -moz-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
     box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
 }
+
+.clickable { pointer-events: auto }
+
+.homebtn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

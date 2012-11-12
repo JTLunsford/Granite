@@ -117,7 +117,7 @@
    			var imgTarget = $this.is('img')?$this:($('img:first',$this).length==0)?$this:$('img:first',$this);
    			var imgTargetSrc=null;
    			if($this.attr('href')) {imgTargetSrc = $this.attr('href');}
-		 	var oImgClose = $('<img class="jqfancyzoomclosebox">').css({position:'absolute',top:0,left:0,cursor:'pointer',zIndex:99999});
+		 	var oImgClose = $('<img class="jqfancyzoomclosebox">').css({position:'absolute',top:0,left:0,cursor:'pointer'});
 
 			// build main options before element iteration		
 	    	var opts = $.extend({},$.fn.fancyzoom.defaultsOptions, userOptions||{},{dimOri:{},
@@ -126,7 +126,7 @@
 	    	});
 	    	
 			if(imgTarget.is('img')){
-		    	var oImgHover = $("<img src='img/zoom.png'>").css({position:'absolute',top:0,left:0});
+		    	var oImgHover = $("<img src='"+opts.imgDir+"zoom.png'>").css({position:'absolute',top:0,left:0});
 				imgTarget.hover(function(){
 					if(imgTarget.css('opacity') != 0){
 						oImgHover.appendTo(imgTarget.parent()).hide();
@@ -144,7 +144,7 @@
 			}
 			
    			if($this.is('img')){
-   				imgTargetSrc = $this.css('cursor','pointer').attr('src');
+   				imgTargetSrc = $this.css('cursor','pointer','clickable').attr('src');
    				if(opts.imgResizeScript){
    					if( imgTargetSrc.match(new RegExp("^"+opts.imgResizeScript,"g")) ){
    						imgTargetSrc=imgTargetSrc.replace(/.*img=([^&]*).*/gi,'$1');
@@ -176,7 +176,6 @@
    				}
    				var o = $.extend({},opts,userOptions);
    				var closeBtn = $("img.jqfancyzoomclosebox");
-                window.closeBtn = closeBtn;
    				if(closeBtn.length > 0){
    					var imCurrent = $('img:first',zoomOpened);
    					if(imgTargetSrc == imCurrent.attr('src')){
@@ -198,8 +197,8 @@
    				//remove the overlay and Reset
 		 	 	if(o.showoverlay && oOverlay) {oOverlay.empty().remove().css({'opacity':o.overlay});}
 				//reset the img close and fix png on it if plugin available
-				oImgClose.attr('src','img/closebox.png').appendTo('body').hide();
-				if($.fn.ifixpng) {$.ifixpng('img/blank.gif');oImgClose.ifixpng('img/blank.gif');}
+				oImgClose.attr('src',o.imgDir+'closebox.png').appendTo('body').hide();
+				if($.fn.ifixpng) {$.ifixpng(o.imgDir+'blank.gif');oImgClose.ifixpng(o.imgDir+'blank.gif');}
 				oImgClose.unbind('click').click(function(){closeZoomBox(o);});
 
 				//reset zoom box prop and add image zoom with a margin top of 15px = imgclose height / 2
@@ -210,18 +209,18 @@
    				if(strTitle){
    					var oTitle = $('<div><center><table height=0 border="0" cellspacing=0 cellpadding=0><tr><td></td><td class="fancyTitle">'+strTitle+'</td><td></td></table></center></div>').css({marginTop:10,marginRight:15});
    					
-   					var tdL = oTitle.find('td:first').css({'background':'url(img/zoom-caption-l.png)',width:'13px',height:'26px'});
-   					var tdR = oTitle.find('td:last').css({'background':'url(img/zoom-caption-r.png)',width:'13px',height:'26px'});
-   					var tdC = $('.fancyTitle',oTitle).css({'background':'url(img/zoom-caption-fill.png)',
+   					var tdL = oTitle.find('td:first').css({'background':'url('+o.imgDir+'zoom-caption-l.png)',width:'13px',height:'26px'});
+   					var tdR = oTitle.find('td:last').css({'background':'url('+o.imgDir+'zoom-caption-r.png)',width:'13px',height:'26px'});
+   					var tdC = $('.fancyTitle',oTitle).css({'background':'url('+o.imgDir+'zoom-caption-fill.png)',
    							'padding':'0px 20px',
    							color:'#FFF',
    							'font-size':'14px'
    							});
 
    					if($.fn.ifixpng){
-   						tdL.ifixpng('img/blank.gif');
-   						tdR.ifixpng('img/blank.gif');
-   						tdC.ifixpng('img/blank.gif');
+   						tdL.ifixpng(o.imgDir+'blank.gif');
+   						tdR.ifixpng(o.imgDir+'blank.gif');
+   						tdC.ifixpng(o.imgDir+'blank.gif');
    					}
    					oTitle.appendTo(oImgZoomBox);   					
    				}
@@ -324,7 +323,7 @@
     	Speed:400,
     	shadow:true,
     	shadowOpts:{ color: "#000", offset: 4, opacity: 0.2 },
-    	imgDir:'granite/img/',
+    	imgDir:'ressources/',
     	imgResizeScript:null,
     	autoresize:true
  	 };
