@@ -2,28 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83eb54d5-cef2-47a3-a9d5-cd2afa555369" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Edges/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Edges/10.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Edges/11.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Edges/12.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Edges/2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Edges/3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Edges/4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Edges/5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Edges/6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Edges/7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Edges/8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Edges/9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Pdf/Sinks.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/plumbing-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ssoa-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.easyModal.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/jquery.fancyzoom.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apple-touch-icon.png" afterPath="$PROJECT_DIR$/apple-touch-icon.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/granite.css" afterPath="$PROJECT_DIR$/css/granite.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/offline.manifest" afterPath="$PROJECT_DIR$/offline.manifest" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/impress.js" afterPath="$PROJECT_DIR$/js/impress.js" />
     </list>
     <ignored path="Granite.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,10 +23,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="244" column="69" selection-start="12003" selection-end="12003" vertical-scroll-proportion="1.0412371">
+            <state line="244" column="69" selection-start="12003" selection-end="12003" vertical-scroll-proportion="-43.45">
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -87,6 +67,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="impress.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/impress.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="786" column="20" selection-start="31776" selection-end="32428" vertical-scroll-proportion="0.82417583">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="granite.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/granite.css">
           <provider selected="true" editor-type-id="text-editor">
@@ -110,12 +99,12 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/js/zoom.js" />
-        <option value="$PROJECT_DIR$/js/impress.js" />
         <option value="$PROJECT_DIR$/js/jquery.js" />
         <option value="$PROJECT_DIR$/js/jquery.fancyzoom.js" />
         <option value="$PROJECT_DIR$/css/granite.css" />
         <option value="$PROJECT_DIR$/offline.manifest" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/impress.js" />
       </list>
     </option>
   </component>
@@ -167,6 +156,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Granite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Granite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Granite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -283,7 +286,11 @@
       <created>1352669577476</created>
       <updated>1352669577476</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Round 2 Updates">
+      <created>1353470544733</created>
+      <updated>1353470544733</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -300,7 +307,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295964" sideWeight="0.09935005" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295964" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -315,8 +322,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="myTodoPanelSettings">
       <value>
         <are-packages-shown value="false" />
@@ -517,11 +524,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/impress.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="723" column="45" selection-start="29901" selection-end="29901" vertical-scroll-proportion="0.9749104" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2535" column="44" selection-start="94306" selection-end="94306" vertical-scroll-proportion="0.50537634" />
@@ -553,7 +555,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="244" column="69" selection-start="12003" selection-end="12003" vertical-scroll-proportion="1.0412371">
+        <state line="244" column="69" selection-start="12003" selection-end="12003" vertical-scroll-proportion="-43.45">
           <folding>
             <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -590,6 +592,13 @@
             <element signature="n#style#0;n#img#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/impress.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="786" column="20" selection-start="31776" selection-end="32428" vertical-scroll-proportion="0.82417583">
+          <folding />
         </state>
       </provider>
     </entry>
