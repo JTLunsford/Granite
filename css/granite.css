@@ -56,6 +56,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
+    overflow: hidden;
 }
 ol, ul {
     list-style: none;
@@ -686,6 +687,7 @@ a:focus {
     margin-left:auto;
     margin-right:auto;
     width:70%;
+    overflow:scroll;
 }
 
 .ceiling {
