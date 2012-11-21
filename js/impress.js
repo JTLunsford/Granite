@@ -765,26 +765,7 @@
             window.closeBtn.trigger('click');
         }, false);
         
-        // touch handler to detect taps on the left and right side of the screen
-        // based on awesome work of @hakimel: https://github.com/hakimel/reveal.js
-//        document.addEventListener("touchstart", function ( event ) {
-//            if (event.touches.length === 1) {
-//                var x = event.touches[0].clientX,
-//                    width = window.innerWidth * 0.3,
-//                    result = null;
-//
-//                if ( x < width ) {
-//                    result = api.prev();
-//                } else if ( x > window.innerWidth - width ) {
-//                    result = api.next();
-//                }
-//
-//                if (result) {
-//                    event.preventDefault();
-//                }
-//                window.closeBtn.trigger('click');
-//            }
-//        }, false);
+
         
         // rescale presentation when window is resized
         window.addEventListener("resize", throttle(function () {
