@@ -649,6 +649,7 @@ a:focus {
     box-orient:horizontal;
     box-pack:center;
     box-align:center;
+    text-align: center;
 }
 
 
@@ -678,4 +679,18 @@ a:focus {
     position: absolute;
     bottom: 0;
     right: 0;
+}
+
+.center
+{
+    margin-left:auto;
+    margin-right:auto;
+    width:70%;
+}
+
+.ceiling {
+    -webkit-transform: rotateX(-90deg);
+}
+.floor {
+    -webkit-transform: rotateX(90deg);
 }
